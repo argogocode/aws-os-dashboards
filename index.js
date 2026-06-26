@@ -210,7 +210,7 @@ if (argv.u && argv.a) {
 app.use(async function (req, res) {
   try {
     // Sign the request before proxying
-    const url = new URL(ENDPOINT);
+    const url = new URL(TARGET);
     const origUrl = new URL(
       req.protocol + "://" + req.get("host") + req.originalUrl
     );
